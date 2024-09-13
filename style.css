@@ -1,0 +1,169 @@
+/* General styles */
+body {
+  background-image: url("https://kennethlange.com/wp-content/uploads/2020/04/office_table_coffee-624x416.jpg");
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: flex; /* Centers the image */
+  background-repeat: no-repeat;
+  opacity: 80%;
+  margin: auto;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+  margin: 10px 0 0 0;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: aqua;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* Bio Section */
+.bio-section {
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.bio-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bio-section p {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 40px 0;
+  background-color: #e2e2e2;
+}
+
+.skills-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  background-color: #333;
+  color: #fff;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.projects-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+  }
+
+  .skills-list {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 480px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 600px) {
+  header h1 {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 992px) {
+  header h1 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  header h1 {
+    font-size: 60px;
+  }
+}
